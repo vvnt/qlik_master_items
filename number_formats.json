@@ -124,7 +124,7 @@
       "label": "Monétaire, euro",
       "description": "Format monétaire en euros avec 2 décimales",
       "qType": "M",
-      "qFmt": "# ##0,00 €",
+      "qFmt": "# ##0 €",
       "qDec": ",",
       "qThou": " ",
       "qnDec": 2

@@ -131,7 +131,7 @@ Le fichier contient un tableau d'objets. Chaque objet décrit une measure :
     "name": "ca_n",
     "expression": "Sum(sales)",
     "label": "CA",
-    "number_format": "currency",
+    "number_format": "currency_eur_0",
     "description": "Chiffre d'affaires",
     "color": "#2CA02C"
   },
@@ -145,13 +145,13 @@ Le fichier contient un tableau d'objets. Chaque objet décrit une measure :
     "name": "panier_moy_n",
     "expression": "ca_n / commande_nb_n",
     "label": "Panier moyen",
-    "number_format": "currency"
+    "number_format": "currency_eur_2"
   },
   {
     "name": "marge_tx_n",
     "expression": "marge_n / ca_n",
     "label": "Taux de marge",
-    "number_format": "percent"
+    "number_format": "percent_1"
   }
 ]
 ```
