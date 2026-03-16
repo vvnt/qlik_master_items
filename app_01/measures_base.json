@@ -1,0 +1,95 @@
+[
+  {
+    "name": "ca_n",
+    "expression": "Sum({< CAL = {'N'} >} sales)",
+    "label": "CA",
+    "number_format": "integer",
+    "description": "Ventes",
+    "color": "#02b1fd"
+  },
+  {
+    "name": "qte_n",
+    "expression": "Sum({< CAL = {'N'} >} qty)",
+    "label": "Qté",
+    "number_format": "integer",
+    "description": "Quantités",
+    "color": "#ffa770"
+  },
+  {
+    "name": "marge_n",
+    "expression": "Sum({< CAL = {'N'} >} margin)",
+    "label": "Marge",
+    "number_format": "integer",
+    "description": "Ventes",
+    "color": "#3d4ffa"
+  },
+  {
+    "name": "cogs_n",
+    "expression": "Sum({< CAL = {'N'} >} cogs)",
+    "label": "COGS",
+    "number_format": "integer",
+    "description": "Ventes",
+    "color": "#f47606"
+  },
+  {
+    "name": "panier_med_n",
+    "expression": "Median(Aggr(ca_n, order_id))",
+    "label": "Panier méd.",
+    "number_format": "currency_eur_2",
+    "description": "Panier médian"
+  },
+  {
+    "name": "commande_nb_n",
+    "expression": "Count({< CAL = {'N'} >} distinct order_id)",
+    "label": "Nb commandes",
+    "number_format": "integer",
+    "description": "Ventes",
+    "color": "#ef476f"
+  },
+  {
+    "name": "indice_de_vente_n",
+    "expression": "qte_n / commande_nb_n",
+    "label": "Indice de vente",
+    "number_format": "float_2",
+    "description": "Indice de vente : quantité vendue en moyenne par commande.",
+    "color": "#ef476f"
+  },
+  {
+    "name": "pu_n",
+    "expression": "ca_n / qte_n",
+    "label": "Prix unitaire",
+    "number_format": "currency_eur_2",
+    "description": "Prix unitaire",
+    "color": "#83af9b"
+  },
+  {
+    "name": "marge_tx_n",
+    "expression": "marge_n / ca_n",
+    "label": "Tx de marge",
+    "number_format": "var_pc_0"
+  },
+  {
+    "name": "panier_moy_n",
+    "expression": "ca_n / commande_nb_n",
+    "label": "Panier moy.",
+    "number_format": "currency_eur_2"
+  },
+  {
+    "name": "contribution",
+    "expression": "ca_n1 * (ca_n / ca_n1 - 1)",
+    "label": "Contribution",
+	"number_format": "var_0"
+  },
+  {
+    "name": "effet_volume",
+    "expression": "(qte_n - qte_n1) * pu_n",
+    "label": "Effet volume",
+    "number_format": "var_0"
+  },
+  {
+    "name": "effet_prix",
+    "expression": "(pu_n - pu_n1) * qte_n1",
+    "label": "Effet prix",
+    "number_format": "var_0"
+  }
+]

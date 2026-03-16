@@ -1,5 +1,4 @@
 # Private Files
-*.json
 *.csv
 *.csv.gz
 *.tsv
@@ -12,6 +11,8 @@
 *.tar.gz
 *.exe
 *.png
+
+config.json
 
 # Environments
 .env

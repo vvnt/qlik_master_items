@@ -1,0 +1,178 @@
+{
+  "_comment": "Bibliothèque de formats numériques pour les master items Qlik. Le séparateur de milliers utilise l'espace insécable (U+00A0).",
+  "formats": {
+    "integer": {
+      "label": "Entier",
+      "description": "Nombre entier sans décimales",
+      "qType": "F",
+      "qFmt": "# ##0",
+      "qDec": ",",
+      "qThou": " ",
+      "qnDec": 2,
+      "qUseThou": 1
+    },
+    "var_0": {
+      "label": "Entier [var]",
+      "description": "Nombre entier sans décimales",
+      "qType": "R",
+      "qFmt": "+# ##0;-# ##0",
+      "qDec": ",",
+      "qThou": " ",
+      "qnDec": 2,
+      "qUseThou": 1
+    },
+    "var_1": {
+      "label": "Décimal, 1 décimale [var]",
+      "description": "Nombre décimal avec 1 chiffre après la virugule [var]",
+      "qType": "R",
+      "qFmt": "+# ##0,0;-# ##0,0",
+      "qDec": ",",
+      "qThou": " ",
+      "qnDec": 2,
+      "qUseThou": 1
+    },
+    "var_2": {
+      "label": "Décimal, 2 décimales [var]",
+      "description": "Nombre décimal avec 2 chiffres après la virugule [var]",
+      "qType": "R",
+      "qFmt": "+# ##0,00;-# ##0,00",
+      "qDec": ",",
+      "qThou": " ",
+      "qnDec": 2,
+      "qUseThou": 1
+    },
+    "var_pc_0": {
+      "label": "Pourcentage, entier [var]",
+      "description": "Pourcentage entier [var]",
+      "qType": "R",
+      "qFmt": "+# ##0,0%;-# ##0,0%",
+      "qDec": ",",
+      "qThou": " ",
+      "qnDec": 2,
+      "qUseThou": 1
+    },
+    "var_pc_1": {
+      "label": "Pourcentage, 1 décimale [var]",
+      "description": "Pourcentage avec 1 chiffre après la virugule [var]",
+      "qType": "R",
+      "qFmt": "+# ##0,0%;-# ##0,0%",
+      "qDec": ",",
+      "qThou": " ",
+      "qnDec": 2,
+      "qUseThou": 1
+    },
+    "varpc_2": {
+      "label": "Pourcentage, 2 décimales [var]",
+      "description": "Pourcentage avec 2 chiffres après la virugule [var]",
+      "qType": "R",
+      "qFmt": "+# ##0,0%;-# ##0,0%",
+      "qDec": ",",
+      "qThou": " ",
+      "qnDec": 2,
+      "qUseThou": 1
+    },
+    "var_pts_0": {
+      "label": "Points, entier [var]",
+      "description": "Var en pts",
+      "qType": "R",
+      "qFmt": "+# ##0pts;-# ##0pts",
+      "qDec": ",",
+      "qThou": " ",
+      "qnDec": 2,
+      "qUseThou": 1
+    },
+    "var_pts_1": {
+      "label": "Points, 1 décimale, pts [var]",
+      "description": "Var en pts",
+      "qType": "R",
+      "qFmt": "+# ##0,0pts;-# ##0,0pts",
+      "qDec": ",",
+      "qThou": " ",
+      "qnDec": 2,
+      "qUseThou": 1
+    },
+    "var_pts_2": {
+      "label": "Points, 2 décimale, pts [var]",
+      "description": "Var en pts",
+      "qType": "R",
+      "qFmt": "+# ##0,0pts;-# ##0,0pts",
+      "qDec": ",",
+      "qThou": " ",
+      "qnDec": 2,
+      "qUseThou": 1
+    },
+    "float_1": {
+      "label": "Décimal (1 chiffre)",
+      "description": "Nombre décimal avec 1 chiffre après la virgule",
+      "qType": "F",
+      "qFmt": "# ##0,0",
+      "qDec": ",",
+      "qThou": " ",
+      "qnDec": 1
+    },
+    "float_2": {
+      "label": "Décimal (2 chiffres)",
+      "description": "Nombre décimal avec 2 chiffres après la virgule",
+      "qType": "F",
+      "qFmt": "# ##0,00",
+      "qDec": ",",
+      "qThou": " ",
+      "qnDec": 2,
+      "qUseThou": 0
+    },
+    "currency_eur_0": {
+      "label": "Monétaire, euro",
+      "description": "Format monétaire en euros avec 2 décimales",
+      "qType": "M",
+      "qFmt": "# ##0,00 €",
+      "qDec": ",",
+      "qThou": " ",
+      "qnDec": 2
+    },
+    "currency_eur_2": {
+      "label": "Monétaire, euro, 2 décimales",
+      "description": "Format monétaire euros avec 2 décimales",
+	  "qType": "M",
+      "qFmt": "# ##0,00 €;-# ##0,00 €",
+      "qDec": ",",
+      "qThou": " ",
+      "qnDec": 2,
+      "qUseThou": 0
+    },	
+    "percent_0": {
+      "label": "Pourcentage, entier",
+      "description": "Pourcentage, entier",  
+	  "qType": "F",
+      "qFmt": "0%",
+      "qDec": ",",
+      "qThou": " ",
+      "qnDec": 0,
+      "qUseThou": 1
+    },
+	"percent_1": {
+      "label": "Pourcentage, 1 décimale",
+      "description": "Format pourcentage avec 1 décimale",
+      "qType": "N",
+      "qFmt": "##0,0%",
+      "qDec": ",",
+      "qnDec": 2
+    },
+    "percent_2": {
+      "label": "Pourcentage, 2 décimales",
+      "description": "Format pourcentage avec 2 décimales",
+      "qType": "N",
+      "qFmt": "##0,00%",
+      "qDec": ",",
+      "qnDec": 2
+    },
+    "auto": {
+      "label": "Auto",
+      "description": "Pas de format appliqué (valeur automatique)",
+      "qType": "U",
+      "qFmt": "",
+      "qDec": "",
+      "qThou": "",
+      "qnDec": 0
+    }
+  }
+}
