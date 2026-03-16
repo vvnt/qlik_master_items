@@ -158,26 +158,6 @@ Le fichier contient un tableau d'objets. Chaque objet décrit une measure :
 
 ---
 
-## Références entre master items
-
-Une measure peut référencer une autre measure directement par son `name`
-dans l'expression :
-
-```json
-{ "expression": "ca_n / commande_nb_n" }
-```
-
-**Pourquoi ça fonctionne :** Qlik résout les références entre master items
-sur le champ `qLabel`. Le script positionne systématiquement `qLabel = name`,
-ce qui permet à l'Engine de retrouver les dépendances par leur identifiant.
-Le label d'affichage (ex : "CA") est porté séparément par `qLabelExpression`
-et n'interfère pas avec la résolution.
-
-**Ordre dans le fichier JSON :** les measures de base doivent apparaître
-**avant** les measures qui les référencent.
-
----
-
 ## Formats numériques disponibles
 
 | Clé           | Label                   | Exemple affiché |
