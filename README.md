@@ -163,19 +163,16 @@ Le fichier contient un tableau d'objets. Chaque objet décrit une measure :
 | Clé           | Label                   | Exemple affiché |
 |---------------|-------------------------|-----------------|
 | `integer`     | Entier                  | `1 234`         |
-| `decimal_1`   | Décimal (1 chiffre)     | `1 234,5`       |
-| `decimal_2`   | Décimal (2 chiffres)    | `1 234,56`      |
-| `currency`    | Monétaire (€)           | `1 234,56 €`    |
-| `currency_k`  | Monétaire milliers (k€) | `1 234 k€`      |
-| `percent`     | Pourcentage (1 déc.)    | `12,3%`         |
-| `percent_2`   | Pourcentage (2 déc.)    | `12,34%`        |
+| `float_1`   | Décimal (1 chiffre)     | `1 234,5`       |
+| `float_2`   | Décimal (2 chiffres)    | `1 234,56`      |
+| `currency_eur_0`    | Monétaire (€)           | `1 234 €`    |
+| ...           |                         |                 |
 | `none`        | Aucun format            | valeur brute    |
 
 Le séparateur de milliers utilise l'**espace insécable** (U+00A0).
 
 Pour ajouter un format, éditer `number_formats.json`. En cas de doute sur
-les valeurs exactes attendues par Qlik, utiliser la commande `inspect` après
-avoir créé une measure manuellement dans l'UI.
+les valeurs exactes attendues par Qlik, utiliser la commande `inspect` après avoir créé une measure manuellement dans l'UI.
 
 ---
 
